@@ -13,7 +13,7 @@ setup(
     packages=['OdooRPCLocust'],
     install_requires=[
         'odoorpc',
-        'locustio',
+        'locust',
     ],
     keywords='odoo locust odoorpc loadtest',
     license='BSD',

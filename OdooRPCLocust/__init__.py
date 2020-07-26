@@ -5,7 +5,7 @@ import odoorpc
 import time
 import sys
 
-from locust import Locust, events
+from locust import User, events
 
 
 class ODOO(odoorpc.ODOO):
@@ -65,7 +65,7 @@ class ODOO(odoorpc.ODOO):
         return res
 
 
-class OdooRPCLocust(Locust):
+class OdooRPCLocust(User):
     host = 'localhost'
     port = 8069
     database = 'demo'
